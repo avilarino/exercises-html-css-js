@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
 </head>
+<nav>
+  <a href="mate1.html">Noticias</a>|
+  <a href="mate2.html">Tablas</a> |
+  <a href="mate3.html">Formulario</a>
+</nav>
 <body>
   <section>
     <h2>Ingresa a la comunidad</h2>
@@ -26,10 +31,13 @@
       <fieldset>
         <legend><b>Formulario</b></legend>
       <label for="nombre">Nombre</label><br>
-      <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre"><br>
+      <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required pattern=[a-zA-Z]+><br>
+
+      <label for="telefono">Telefono</label><br>
+      <input minlength="10" maxlength="10" type="number" id="telefono" name="telefono" placeholder="escribe tu telefono" required pattern="[0-9]+"><br>
     
       <label for="email">Email</label><br>
-      <input type="email" id="mail" name="mail"><br>
+      <input type="email" id="mail" name="mail" required><br>
     
       <label for="masculino">Masculino</label>
       <input type="radio" id="masculino" name="genero">
@@ -55,8 +63,8 @@
       <textarea type="text" id="comentarios" name="comentarios" placeholder="deja tu sugerencia"></textarea><br>
     
       
-      <p>pon tu fecha de nacimiento</p><br>
-      <input type="date" value="enviar"><br><br>
+      <p>pon tu fecha de nacimiento</p>
+      <input type="date" value="enviar" required><br><br>
     
       <input type="submit" value="enviar">
     

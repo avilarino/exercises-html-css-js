@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Formulario de Registro</h3>
+
+  <form action="/formulario">
+    <fieldset>
+      <legend><b>Formulario</b></legend>
+    <label for="nombre">Nombre</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required pattern=[a-zA-Z]+><br>
+
+    <label for="telefono">Telefono</label><br>
+    <input minlength="10" maxlength="10" type="number" id="telefono" name="telefono" placeholder="escribe tu telefono" required pattern="[0-9]+"><br>
+  
+    <label for="email">Email</label><br>
+    <input type="email" id="mail" name="mail" required><br>
+  
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="masculino" name="genero">
+    
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="femenino" name="genero">
+    <label for="otro">Otro</label>
+    <input type="radio" id="otro" name="otro"><br><br>
+  
+    <p>¿Qué red social utilizas para informarte?</p>
+    <label for="facebook">Facebook</label>
+    <input type="facebook" id="facebook" name="facebook">
+    <label for="instagram">Instagram</label>
+    <input type="instagram" id="instagram" name="instagram">
+    <label for="twitter">Twitter</label>
+    <input type="twitter" id="twitter" name="twitter">
+    <label for="linkedin">Linkedin</label>
+    <input type="linkedin" id="linkedin" name="linkedin">
+   
+  
+    <label for="comentarios">Sugerencias</label><br>
+    <textarea type="text" id="comentarios" name="comentarios" placeholder="deja tu sugerencia"></textarea><br>
+  
+    
+    <p>pon tu fecha de nacimiento</p>
+    <input type="date" value="enviar" required><br><br>
+  
+    <input type="submit" value="enviar">
+  
+  </fieldset>
+  </form>
+</body>
+</html>

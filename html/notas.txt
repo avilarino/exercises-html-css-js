@@ -1,0 +1,41 @@
+// ejercitaciones html
+terminado 100%
+https://www.freecodecamp.org/learn/responsive-web-design/
+
+https://roadmap.sh/frontend
+
+
+// tutoriales
+curso hola mundo 100% -HECHO - basico
+https://www.youtube.com/watch?v=MJkdaVFHrto&t=61s
+
+curso the coder cave esp 100% - HECHO - avanzado
+https://www.youtube.com/watch?v=ObjJc6mzf84
+
+curso freeCodeCamp - avanzado - Hecho - basico
+https://www.youtube.com/watch?v=pQN-pnXPaVg
+
+
+// road map
+- terminar el road map
+- trabajar con accesibilidad
+- trabajo adaptable para otros
+- web accesibles => trabajar para todo tipo de gente
+- tener bases de html, css y javascript
+- responsive design => que se vean bien en todos los dispositivos
+- que se vean bien en todos los navegadores
+- saber git
+
+//cv 
+- que hable de mi
+- 
+. que tenga objetivo = conseguir la entrevista
+- nombre y rol
+- datos de contacto
+- resumen 
+- habilidades => decir bien lo que hace uno
+- experiencia profesional => experiencia profesional
+- educacion => mostrar los más relevantes
+- referencias => laborales
+
+- frameworks

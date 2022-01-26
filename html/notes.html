@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teoría HTML</title><!-- esto aparece en el titulo del navegador-->
+</head>
+<body>
+
+  <!-- Comentarios en html -->
+  <!-- tags conceptos generales-->
+
+<!-- titulos -->
+<h1>Teoría Headings</h1>
+<h1>Titulos tamaño h1</h1>
+<h2>Titulos tamaño h2</h2>
+<h3>Titulos tamaño h3</h3>
+<h4>Titulos tamaño h4</h4>
+<h5>Titulos tamaño h5</h5>
+<h6>Titulos tamaño h6</h6>
+
+<hr>
+<h1>Teoría parrafos</h1>
+<p><strong>etiqueta p</strong> =>  para hacer parrafos</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere nobis tempore ea! Reprehenderit repellat consequuntur odit accusamus laboriosam inventore sequi atque neque, magni nemo unde fugiat. Rem vel quos porro a dolor. Necessitatibus, voluptate earum fugiat distinctio harum exercitationem quod saepe amet id sit velit consequatur consectetur blanditiis cum.</p>
+ 
+<pre><strong>etiqueta pre</strong>=> para hacer aparecer los espacios tanto en visual code como en la web</pre>
+<pre>     juego con los espacios en visual studio code 
+  y gracias      al pre   aparecen sin default
+</pre>
+
+<!-- formatos-->
+<hr>
+<h1>Teoria Formatos</h1>
+<b>etiqueta b=> sirve para escribir en negrita</b><br>
+<i>etiqueta i => sirve para escribir en italic</i><br>
+<strong>etiqueta strong => sirve para engrosar el texto</strong><br>
+<em>etiqueta em => sirve para la cursiva</em><br>
+<mark>la etiqueta mark se usa para repasar</mark><br>
+<ins>la etiqueta ins se usa para subrayar</ins><br>
+<del>la etiqueta del para borrar</del>
+
+<!-- citas -->
+<hr>
+<h1>Teoría Citas</h1>
+<blockquote>etiqueta blockquotes => para escribir citas</blockquote><br>
+<q>la etiqueta q => para hacer citas dentro de un parrafo</q><br>
+<cite>la etiqueta cite => para hacer citas y que se vea en italica</cite><br>
+<address>la etiqueta address => para informacion de contacto, Agustin VIlariño, Buenos Aires, Argentina</address><br>
+
+<p>la etiqueta abbr => para abreviar => <abbr title="www.google.com.ar">www</abbr></p><br>
+
+<!-- hipervinculos-->
+<hr>
+<h1>Teoría hipervinculos</h1>
+<a href="">la etiqueta a => para usar como hipervinculo con href se envía un link a donde uno quiera, con target="_blank" se envía a una pagina nueva</a><br>
+
+<!--tablas-->
+<hr>
+<h1>Teoría Tablas</h1>
+<table style="border: 1px solid black">
+  <tr>
+    <th >Mate</th>
+    <th >Lugar</th>
+    <th >Material</th>
+    <th >Precio</th>
+    <th >Peso</th>
+    <th >Stock</th>
+    <th >Artesanal</th>
+    <th >Autor</th>
+  </tr>
+<tbody>
+  <tr>
+    <td>Matienzo</td>
+    <td>Corrientes</td>
+    <td>Calabaza</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >400</td>
+    <td >si</td>
+    <td >Jose Mastil</td>
+  </tr>
+  <tr>
+    <td>Mateico</td>
+    <td>Entre Rios</td>
+    <td>Madera</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >3100</td>
+    <td >si</td>
+    <td >Manuel Gutierrez</td>
+  </tr>
+  <tr>
+
+    <td>Matezulli</td>
+    <td>Entre Rios</td>
+    <td>Calabaza</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >3500</td>
+    <td >si</td>
+    <td >Nicolas Cisneros</td>
+  </tr>
+  <tr>
+    <td>Matienzo</td>
+    <td>Corrientes</td>
+    <td>Calabaza</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >400</td>
+    <td >si</td>
+    <td >Jose Mastil</td>
+  </tr>
+  <tr>
+    <td>Mateico</td>
+    <td>Entre Rios</td>
+    <td>Madera</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >3100</td>
+    <td >si</td>
+    <td >Manuel Gutierrez</td>
+  </tr>
+  <tr>
+
+    <td>Matezulli</td>
+    <td>Entre Rios</td>
+    <td>Calabaza</td>
+    <td>$500</td>
+    <td>50gr</td>
+    <td >3500</td>
+    <td >si</td>
+    <td >Nicolas Cisneros</td>
+  </tr>
+</tbody>
+</table>
+
+<!-- listas-->
+
+<hr>
+<h1>Teoría Listas</h1>
+<p>listas</p>
+<p>order list</p>
+  <ol>
+    <li>caramelos</li>
+    <l1>bolsas</l1>
+    <li>miel</li>
+  </ol>
+
+<p>unorder list</p>
+  <ul>
+    <li>caramelos</li>
+    <li>bolsas</li>
+    <li>miel</li>
+  </ul>
+
+<hr>
+<!-- formularios
+validations => 
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation -->
+
+<h1>Teoría Formularios</h1>
+<form action="/formulario">
+  <fieldset>
+    <legend><b>Formulario</b></legend>
+  <label for="nombre">Nombre</label><br>
+  <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required pattern=[a-zA-Z]+><br>
+
+  <label for="telefono">Telefono</label><br>
+  <input minlength="10" maxlength="10" type="number" id="telefono" name="telefono" placeholder="escribe tu telefono" required pattern="[0-9]+"><br>
+
+  <label for="email">Email</label><br>
+  <input type="email" id="mail" name="mail" required><br>
+
+  <label for="masculino">Masculino</label>
+  <input type="radio" id="masculino" name="genero">
+  
+  <label for="femenino">Femenino</label>
+  <input type="radio" id="femenino" name="genero">
+  <label for="otro">Otro</label>
+  <input type="radio" id="otro" name="otro"><br><br>
+
+  <p>Que mates prefieres</p>
+  <label for="calabaza">Calabaza</label>
+  <input type="checkbox" id="calabaza">
+  <label for="madera">Madera</label>
+  <input type="checkbox" id="madera">
+  <label for="vaca">Pezuña de vaca</label>
+  <input type="checkbox" id="vaca">
+  <label for="caña">Caña</label>
+  <input type="checkbox" id="caña">
+  <label for="plastico">Plastico</label>
+  <input type="checkbox" id="plastico"><br><br>
+
+  <label for="comentarios">Sugerencias</label><br>
+  <textarea type="text" id="comentarios" name="comentarios" placeholder="deja tu sugerencia"></textarea><br>
+
+  
+  <p>pon tu fecha de nacimiento</p>
+  <input type="date" value="enviar" required><br><br>
+
+  <input type="submit" value="enviar">
+
+</fieldset>
+</form>
+
+
+</body>
+</html>

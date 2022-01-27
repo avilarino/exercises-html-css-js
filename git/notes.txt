@@ -1,0 +1,31 @@
+- git
+- sistema de control de versiones
+- lo empezamos a usar cuando el proyecto crece
+
+- GIT VS GITHUB
+- git => software local
+- github => plataforma online
+
+- recomendación usar gitbash
+
+comandos =>
+ls => muestra todos los elementos de una carpeta
+cd => change directory
+cls / clear => reseteamos la consola
+mkdir => creamos la carpeta nueva
+
+//////////////////////////////////////////////////
+
+git init => iniciaremos git en el proyecto
+(crea repositorio local !!)
+
+git status => aparecen los archivos del proyecto 
+              todavía no estan guardados (rojo).
+
+git add . => guardamos todos los archivos 
+
+git commit -m "mensaje lo más descriptivo posible"
+
+git log => se ve quien hizo los commit fecha - mensaje
+
+---------- se guarda todo -------------------------

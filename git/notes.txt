@@ -8,6 +8,8 @@
 
 - recomendación usar gitbash
 
+git config => para configuraciones
+
 comandos =>
 ls => muestra todos los elementos de una carpeta
 cd => change directory
@@ -27,5 +29,23 @@ git add . => guardamos todos los archivos
 git commit -m "mensaje lo más descriptivo posible"
 
 git log => se ve quien hizo los commit fecha - mensaje
+git log --oneline => mas corto menos info
+
 
 ---------- se guarda todo -------------------------
+
+git diff => te muestra modificaciones en el proyecto
+
+git checkout (file) => elimina los últimos cambios hechos
+
+----------- ir atrás del proyecto ----------------
+git log --oneline => muestras los commit 
+git reset --hard  y las 7LETRAS del commit que nos interesa
+git reset --soft y las 7LETRAS
+
+
+----------- rama nueva ----------------------------
+git branch (vemos todas las ramas)
+git checkout -b (nombreRama)
+
+git merge (nombreRama a funcionar)

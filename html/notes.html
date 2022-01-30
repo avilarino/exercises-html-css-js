@@ -4,207 +4,460 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teoría HTML</title><!-- esto aparece en el titulo del navegador-->
+
+  <!-- canonical para aparecer más-->
+  <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+  <!-- favicon en formato png !! -->
+  <link rel="icon" href="images/html.png">
+  <!-- para webs con apple -->
+  <link rel="apple-touch-icon" href="images/html.png">
+  <!-- para cambiar la barra de navegacion de color en los celulares-->
+  <meta name="theme-color" content="#FF6600">
+
+  <!-- meta para redes sociales -->
+  <!-- hay que buscar cada una en particular las meta etiquetas 
+      en la documentación de cada red social -->
+  <meta property="og:title" content="Aprendiendo HTML">
+  <meta property="og:description" content="En esta página estamos aprendiendo lo fundamentos de HTML con @jonmircha">
+  <meta property="og:image" content="https://midominio.com/img/periodic-table-of-html-elements.png">
+  <meta property="og:url" content="https://midominio.com/index.html">
+  <!-- meta etiquetas para twitter !! -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jonmircha">
+
+
+  <title>Document</title>
+  <!-- agregamos estilos al html-->
+  
 </head>
 <body>
+  <style>
+    h2 {
+      color: red;
+    }
+  </style>
 
-  <!-- Comentarios en html -->
-  <!-- tags conceptos generales-->
+<!-- Comentarios -->
+  <h1>Apuntes guía de HTML</h1>
+  <p>Curso de HTML</p>
+  <p>Aprendiendo las bases de HTML</p>
 
-<!-- titulos -->
-<h1>Teoría Headings</h1>
-<h1>Titulos tamaño h1</h1>
-<h2>Titulos tamaño h2</h2>
-<h3>Titulos tamaño h3</h3>
-<h4>Titulos tamaño h4</h4>
-<h5>Titulos tamaño h5</h5>
-<h6>Titulos tamaño h6</h6>
-
-<hr>
-<h1>Teoría parrafos</h1>
-<p><strong>etiqueta p</strong> =>  para hacer parrafos</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere nobis tempore ea! Reprehenderit repellat consequuntur odit accusamus laboriosam inventore sequi atque neque, magni nemo unde fugiat. Rem vel quos porro a dolor. Necessitatibus, voluptate earum fugiat distinctio harum exercitationem quod saepe amet id sit velit consequatur consectetur blanditiis cum.</p>
- 
-<pre><strong>etiqueta pre</strong>=> para hacer aparecer los espacios tanto en visual code como en la web</pre>
-<pre>     juego con los espacios en visual studio code 
-  y gracias      al pre   aparecen sin default
-</pre>
-
-<!-- formatos-->
-<hr>
-<h1>Teoria Formatos</h1>
-<b>etiqueta b=> sirve para escribir en negrita</b><br>
-<i>etiqueta i => sirve para escribir en italic</i><br>
-<strong>etiqueta strong => sirve para engrosar el texto</strong><br>
-<em>etiqueta em => sirve para la cursiva</em><br>
-<mark>la etiqueta mark se usa para repasar</mark><br>
-<ins>la etiqueta ins se usa para subrayar</ins><br>
-<del>la etiqueta del para borrar</del>
-
-<!-- citas -->
-<hr>
-<h1>Teoría Citas</h1>
-<blockquote>etiqueta blockquotes => para escribir citas</blockquote><br>
-<q>la etiqueta q => para hacer citas dentro de un parrafo</q><br>
-<cite>la etiqueta cite => para hacer citas y que se vea en italica</cite><br>
-<address>la etiqueta address => para informacion de contacto, Agustin VIlariño, Buenos Aires, Argentina</address><br>
-
-<p>la etiqueta abbr => para abreviar => <abbr title="www.google.com.ar">www</abbr></p><br>
-
-<!-- hipervinculos-->
-<hr>
-<h1>Teoría hipervinculos</h1>
-<a href="">la etiqueta a => para usar como hipervinculo con href se envía un link a donde uno quiera, con target="_blank" se envía a una pagina nueva</a><br>
-
-<!--tablas-->
-<hr>
-<h1>Teoría Tablas</h1>
-<table style="border: 1px solid black">
-  <tr>
-    <th >Mate</th>
-    <th >Lugar</th>
-    <th >Material</th>
-    <th >Precio</th>
-    <th >Peso</th>
-    <th >Stock</th>
-    <th >Artesanal</th>
-    <th >Autor</th>
-  </tr>
-<tbody>
-  <tr>
-    <td>Matienzo</td>
-    <td>Corrientes</td>
-    <td>Calabaza</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >400</td>
-    <td >si</td>
-    <td >Jose Mastil</td>
-  </tr>
-  <tr>
-    <td>Mateico</td>
-    <td>Entre Rios</td>
-    <td>Madera</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >3100</td>
-    <td >si</td>
-    <td >Manuel Gutierrez</td>
-  </tr>
-  <tr>
-
-    <td>Matezulli</td>
-    <td>Entre Rios</td>
-    <td>Calabaza</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >3500</td>
-    <td >si</td>
-    <td >Nicolas Cisneros</td>
-  </tr>
-  <tr>
-    <td>Matienzo</td>
-    <td>Corrientes</td>
-    <td>Calabaza</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >400</td>
-    <td >si</td>
-    <td >Jose Mastil</td>
-  </tr>
-  <tr>
-    <td>Mateico</td>
-    <td>Entre Rios</td>
-    <td>Madera</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >3100</td>
-    <td >si</td>
-    <td >Manuel Gutierrez</td>
-  </tr>
-  <tr>
-
-    <td>Matezulli</td>
-    <td>Entre Rios</td>
-    <td>Calabaza</td>
-    <td>$500</td>
-    <td>50gr</td>
-    <td >3500</td>
-    <td >si</td>
-    <td >Nicolas Cisneros</td>
-  </tr>
-</tbody>
-</table>
-
-<!-- listas-->
-
-<hr>
-<h1>Teoría Listas</h1>
-<p>listas</p>
-<p>order list</p>
-  <ol>
-    <li>caramelos</li>
-    <l1>bolsas</l1>
-    <li>miel</li>
-  </ol>
-
-<p>unorder list</p>
+<!-- Índice / Guía del curso -->
+<section>
   <ul>
-    <li>caramelos</li>
-    <li>bolsas</li>
-    <li>miel</li>
+    <li><a href="notas.html#html-titles">Encabezados en Html</a></li>
+    <li><a href="notas.html#basic-text">Etiquetas de texto básicas</a></li>
+    <li><a href="notas.html#semantic-text">Etiquetas de texto semánticas</a></li>
+    <li><a href="notas.html#jump-tags">Etiquetas de salto</a></li>
+    <li><a href="notas.html#format-tags">Etiquetas de formateo</a></li>
+    <li><a href="notas.html#structure-tags">Etiquetas semánticas estructurales</a></li>
+    <li><a href="notas.html#line-block">Etiquetas linea VS de bloque</a></li>
+    <li><a href="notas.html#html-styles">Estilos en html</a></li>
+    <li><a href="notas.html#html-scripts">Scripts en html</a></li>
+    <li><a href="notas.html#html-images">Imágenes en html</a></li>
+    <li><a href="notas.html#html-vectors">Vectores</a></li>
+    <li><a href="notas.html#html-figures">Figuras</a></li>
+    <li><a href="notas.html#u-list">Listas Ordenadas</a></li>
+    <li><a href="notas.html#o-list">Listas Desordenadas</a></li>
+    <li><a href="notas.html#d-list">Listas de definición</a></li>
+    <li><a href="notas.html#html-tables">Tablas</a></li>
+    <li><a href="notas.html#html-links">Enlaces</a></li>
+    <li><a href="notas.html#-internal-links">Enlaces Internos</a></li>
+    <li><a href="notas.html#html-protocol-links">Enlaces Protocolares</a></li>
+    <li><a href="notas.html#html-interactive">Elementos interactivos</a></li>
+    <li><a href="notas.html#audio-video">Audio y Video</a></li>
+    <li><a href="notas.html#html-iframes">Iframes</a></li>
+    <li><a href="notas.html#html-form">Formularios</a></li>
+    <li><a href="notas.html#html-data-attributes">Data Attributes</a></li>
+    <li><a href="notas.html#html-metatags">Meta etiquetas</a></li>
   </ul>
+</section>
 
+<!-- encabezados-->
 <hr>
-<!-- formularios
-validations => 
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation -->
+<section>
+  <h2 id="html-titles"><strong>Encabezados en HTML</strong></h2>
+  <h1>Encabezados con h1</h1>
+  <h2>Encabezados con h2</h2>
+  <h3>Encabezados con h3</h3>
+  <h4>Encabezados con h4</h4>
+  <h5>Encabezados con h5</h5>
+  <h6>Encabezados con h6</h6>
+  <p>etiqueta p => para los parrafos</p>
+</section>
 
-<h1>Teoría Formularios</h1>
-<form action="/formulario">
-  <fieldset>
-    <legend><b>Formulario</b></legend>
-  <label for="nombre">Nombre</label><br>
-  <input type="text" id="nombre" name="nombre" placeholder="escribe tu nombre" required pattern=[a-zA-Z]+><br>
 
-  <label for="telefono">Telefono</label><br>
-  <input minlength="10" maxlength="10" type="number" id="telefono" name="telefono" placeholder="escribe tu telefono" required pattern="[0-9]+"><br>
+<!--Etiquetas de texto básicas -->
+<hr>
+<section>
+  <p>
+  <h2 id="basic-text"><strong>Textos básicos en html</strong></h2><br>
+  <b>etiqueta b => negrita</b><br>
+  <i>etiqueta i => itálica</i><br>
+  <u>etiqueta u => subrayado</u><br>
+  <p>etiqueta sup => e=mc<sup>2</sup></p><br>
+  <p>etiqueta sub => H<sub>2</sub>O </p><br>
+  <mark>etiqueta mark => resaltador </mark><br>
+  <small> etiqueta small =>letras pequeñas</small><br>
+  </p>
+</section>
 
-  <label for="email">Email</label><br>
-  <input type="email" id="mail" name="mail" required><br>
+<!-- Etiqueta de texto semánticas -->
+<hr>
+<section>
+  <h2 id="semantic-text"><strong>Textos semánticos</strong></h2><br>
+  <strong>etiqueta strong => mas grueso</strong><br>
+  <em>etiqueta em => para hacer énfasis</em><br>
+  <blockquote>etiqueta blockquote => para citas, Yo solo se que no se nada</blockquote><br>
+  <cite><q>Socrates</q></cite>
+</section>
 
+<!-- Etiquetas de salto -->
+<hr>
+<section>
+  <h2 id="jump-tags"><strong>Etiquetas de salto</strong></h2><br>
+  <p>etiqueta br => para hacer el salgo</p><br>
+</section>
+
+<!-- Etiquetas de formateo -->
+<hr>
+<section>
+  <h2 id="format-tags"><strong>Etiquetas de formateo</strong></h2>
+  <p>etiqueta pre => para que quede igual que el código</p><br>
+  <p>etiqueta code => para que quede respete la identación</p><br>
+</section>
+
+<!--Etiquetas semánticas estructurales-->
+<hr>
+<section>
+  <h2 id="structure-tags"><strong>Etiquetas semánticas estructurales</strong></h2>
+  <ul>
+    <li>div</li>
+    <li>Nav</li>
+    <li>Header</li>
+    <li>Main</li>
+    <li>Footer</li>
+    <li>Article</li>
+    <li>Aside</li>
+    <li>Section</li>
+    <li>Addres</li>
+  </ul>
+</section>
+
+<!-- Etiquetas de Linea VS de bloque-->
+<hr>
+<section>
+  <h2 id="line-block"><strong>Etiquetas de Linea VS de Bloque</strong></h2>
+  <p>etiqueta de bloque mas importante es div </p>
+  <p>etiqueta <span>span</span> es la mas importante en linea</p>
+  <p><mark>(ambas no se ven en la pagina web)(ayudan para estructurar el codigo)</mark></p>
+</section>
+
+<!--Estilos en HTML-->
+<hr>
+<section>
+  <h2 id="html-styles"><strong>Estilos en HTML</strong></h2>
+  <div style="background-color:orange">Agregamos style="background-color: organe a un div</div>
+  <span class="bg-red">Aca coloreamos una etiqueta span desde el style en el head con un class en la etiqueta</span>
+  <p>Tambien podemos agregar un archivo css y poner todo ahi => styles.css</p>
+</section>
+
+<!-- Scripts en HTML -->
+<hr>
+<section>
+  <h2 id="html-scripts"><strong>Scripts en HTML</strong></h2>
+  <p>se ponen al fondo del body</p>
+  <p>se arma un archivo index.js</p>
+</section>
+
+<!-- Imágenes en HTML-->
+<hr>
+<section>
+  <h2 id="html-images"><strong>Imágenes en HTML</strong></h2><br>
+  <img src="images/tablahtml.jpg" alt="tabla-html">
+</section>
+
+<!-- Vectores -->
+<hr>
+<section><br>
+  <h2 id="html-vectors"><strong>Vectores</strong></h2>
+  <p>se envía una imágen con un código en svg</p>
+  <p>Si no se quiere pegar el código igualmente se puede usar img</p>
+  <svg height="210" width="500">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
+    Sorry, your browser does not support inline SVG.
+  </svg>
+</section>
+
+<!-- Figuras -->
+<hr>
+<section>
+  <h2 id="html-figures"><strong>Figuras</strong></h2><br>
+  <figure>
+    <img src="images/tablahtml.jpg" alt="figure">
+    <figcaption>figcaption => Tabla de los elementos html</figcaption>
+  </figure>
+</section>
+
+<!-- Listas Ordenadas -->
+<hr>
+<section>
+  <h2 id="o-list"><strong>Order List</strong></h2>
+  <ol>
+    <li start="4">Enero</li>
+    <li>Febrero</li>
+    <li>Marzo</li>
+    <li>Abril</li>
+  </ol>
+  <ol reversed>
+    <li>sal</li>
+    <li>azucar</li>
+  </ol>
+</section>
+
+
+<!-- Listas desordenadas -->
+<hr>
+<section>
+  <h2 id="u-list"><strong>Unorder List</strong></h2>
+<ul>
+  <li type="circle">Tomate</li>
+  <li>Lechuga</li>
+  <li>Yogurt</li>
+  <li>Ropa</li>
+</ul>
+<ul>
+  <li type="square">zapatillas</li>
+  <li>traje</li>
+  <li>camisa</li>
+</ul>
+</section>
+
+<!--Listas de definición-->
+<hr>
+<section>
+  <h2 id="d-list"><strong>Listas de definición</strong></h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>html se usa para maquetear</dd>
+    <dt>CSS</dt>
+    <dd>Se usa para dar estilos</dd>
+  </dl>
+</section>
+
+<!-- Tablas -->
+<hr>
+<section>
+  <h2 id="html-tables"><strong>Tablas</strong></h2>
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td>Constelación</td>
+      <td>Tipo</td>
+    </tr>
+    <tr>
+      <td>Ikki</td>
+      <td>Fénix</td>
+      <td>Bronce</td>
+    </tr>
+    <tr>
+      <td>Shaina</td>
+      <td>Ofiuco</td>
+      <td>Plata</td>
+    </tr>
+    <tr>
+      <td>Saga</td>
+      <td>Géminis</td>
+      <td>Dorado</td>
+    </tr>
+  </table>
+  <br><br><br>
+  <table>
+</section>
+
+<!-- Enlaces-->
+<hr>
+<section>
+  <h2 id="html-links"><strong>Enlaces</strong></h2><br>
+  <a href="http://www.google.com.ar" target="_blank">Google => pagina externa poner https</a><br>
+  <p>con target="_blank" te lleva a un navegador externo</p>
+</section>
+
+<!--Enlaces internos -->
+<hr>
+<section>
+<h2 id="html-internal-links"><strong>Enlaces internos</strong></h2>
+<p>index.html#title-form</p><br>
+<p>---------------------</p>
+<p>---------------------</p>
+<p>< a id="title-form> </ a> </p>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
+
+<!-- Enlaces protocolares -->
+<hr>
+<section>
+  <h2 id="html-protocol-links"><strong>Enlaces protocolares</strong></h2>
+  <a href="mailto:lic.avilarino@gmail.com">(mailto)Enviar Mail a Agustin</a>
+  <a href="tel:5494534534546">(tel)Llamar por telefono a Agustin</a>
+</section>
+
+<!-- Elementos interactivos -->
+<hr>
+<section>
+  <h2 id="html-interactive"><strong>Elementos Interactivos</strong></h2>
+  <button onclick="alert(`este es un boton`)">Button => Boton</button><br>
+  <br>
+  <details>
+    <summary>Titulo del acordeón</summary>
+    <article>
+      <h3>Contenido 1</h3>
+      <p>Contenido 2</p>
+      <p>Contenido 3</p>
+      <p>también se pueden poner imágenes</p>
+    </article>
+  </details>
+</section>
+<dialog open>
+  Esto es una ventana modal en HTML
+</dialog>
+
+<!-- Audio y Video-->
+<hr>
+<section>
+  <!--controls => mini reproductor-->
+  <!--preload => -->
+  <!--poster => la primer imágen del video-->
+  <!-- autoplay => de una-->
+  <!-- loop => una y otra vez-->
+  <!-- muted empieza muteado-->
+  <!-- preload => para que haga click! -->
+  <hr>
+  <h2 id="audio-video"><strong>Audio y Video</strong></h2><br>
+  <section>
+  <h2 id="audio-video">Audio y Video</h2>
+  <audio src="" controls preload>Escuha !!</audio>
+  <h2>Video</h2>
+  <br>
+  <video src="" controls preload poster=""></video>
+  </section>
+  <br>
+
+  <!-- Iframes en HTML-->
+  <!-- puede ser una página externa o interna -->
+  <!-- muchas páginas protegidas !! -->
+  <hr>
+  <section>
+  <h2 id="html-iframes"><strong>Iframes</strong></h2>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889515!2d-58.3837590849944!3d-34.603734465005495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1643554288063!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/n61ULEU7CO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  <!-- Formularios !!! -->
+  <hr>
+  <h2 id="html-form"><strong>Formularios</strong></h2>
+  <p>Elementos input en un form</p>
+  <h2 id="formularios">Formularios</h2>
+  <h3>Elementos de Formularios</h3>
+
+<form action="" method="post" >
+  <p style="color: blue">Escribe tu nombre</p>
+  <label for="username">Username</label>
+  <input type="text" name="username" id="username" placeholder="username"
+          title="solo letras" maxlength="10" minlength="4" required>
+  <br>
+
+  <label for="password">password</label><br>
+  <input minlength="10" maxlength="10" type="password" id="password" name="password" placeholder="escribe tu telefono" required pattern="[0-9]+">
+  <br>
+
+  <p style="color: blue">Elige tus redes sociales favoritas</p>
+  <label for="facebook">Facebook</label>
+  <input type="checkbox" name="facebook" id="facebook">
+  <label for="instagram">Instagram</lanstagrambel>
+  <input type="checkbox" name="instagram" id="instagram">
+  <label for="twitter">Twitter</label>
+  <input type="checkbox" name="twitter" id="twitter">
+  <br>
+  <p style="color:blue ">Elige tu género</p>
   <label for="masculino">Masculino</label>
-  <input type="radio" id="masculino" name="genero">
+  <input type="radio" id="masculino" name="masculino">
+  <label for="fem">Femenino</label>
+  <input type="radio" id="fem" name="fem">
+  <label for="other">otro</label>
+  <input type="radio" id="other" name="other">
+  <br>
+  <p style="color:blue">Escribe tu fecha de nacimiento</p>
+  <label for="date">Señala tu nacimiento</label>
+  <input type="date" id="born" name="born">
+  <br>
+  <p style="color:blue">Por tu color favorito</p>
+  <label for="color">Elige tu color favorito</label>
+  <input type="color" id="color" name="color">
+  <br>
+  <p style="color:blue">Adjunta tu cv</p>
+  <label for="file"></label>
+  <input type="file" id="file" name="id">
+  <br>
+  <p style="color:blue">Adjunta tus fotos dni</p>
+  <label for="file-more"></label>
+  <input type="file" id="file-more" name="file-more" multiple>
+  <br>
+ 
+  <p style="color:blue">Elige tu idioma:</p>
+    <select name="idioma" required>
+      <option value="" selected>Elige una opción</option>
+      <option value="es">Español</option>
+      <option value="en">Inglés</option>
+      <option value="fr">Francés</option>
+      <option value="it">Italiano</option>
+      <option value="pt">Portugués</option>
+    </select>
+  <br>
+  <p style="color:blue">Escribe tu mail</p>
+  <label for="email">Email</label>
+  <input type="email" name="correo" 
+          placeholder="Escribe tu correo" 
+          pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+          title="Formato de correo inválido" required>
+  <br>
+  <label for="edad">Edad</label>
+  <input type="number" name="edad" for="edad">
+  <br>
+  <p style="color:blue">Teléfono</p>
+  <label for="tel">tel</label>
+  <input type="tel" name="tel" id="tel">
+  <br>
   
-  <label for="femenino">Femenino</label>
-  <input type="radio" id="femenino" name="genero">
-  <label for="otro">Otro</label>
-  <input type="radio" id="otro" name="otro"><br><br>
-
-  <p>Que mates prefieres</p>
-  <label for="calabaza">Calabaza</label>
-  <input type="checkbox" id="calabaza">
-  <label for="madera">Madera</label>
-  <input type="checkbox" id="madera">
-  <label for="vaca">Pezuña de vaca</label>
-  <input type="checkbox" id="vaca">
-  <label for="caña">Caña</label>
-  <input type="checkbox" id="caña">
-  <label for="plastico">Plastico</label>
-  <input type="checkbox" id="plastico"><br><br>
-
   <label for="comentarios">Sugerencias</label><br>
-  <textarea type="text" id="comentarios" name="comentarios" placeholder="deja tu sugerencia"></textarea><br>
+    <textarea type="text" id="comentarios" name="comentarios" placeholder="deja tu sugerencia"></textarea>
 
-  
-  <p>pon tu fecha de nacimiento</p>
-  <input type="date" value="enviar" required><br><br>
 
   <input type="submit" value="enviar">
 
-</fieldset>
 </form>
 
+<!-- data attributes -->
+<hr>
+<h2 id="html-data-attributes"><strong>Data Attributtes</strong></h2>
+<section>
+  <ul>
+    <li data-id="futbol" data-futbol="futbol">Futbol</li>
+    <li data-id=""" data-rugby="rugby">Rugby</li>
+    <li data-id="" data-handball="handball" >Handball</li>
+  </ul>
+</section>
 
-</body>
-</html>
+
+<!-- meta etiquetas -->
+
+<hr>
+<h2 id="html-metatags"><strong>metaetiquetas</strong></h2>
+<section>
+  <p>link rel="canonical" href="http://midominio/la-url-canonica</p>
+
+</section>
